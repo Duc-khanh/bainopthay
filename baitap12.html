@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var chain = []
+        for (var i = 0; i < 10; i++) {
+            var input = prompt("Nhập " + (i + 1))
+            chain.push(input)   /* push : thêm pt ở cuối mãng */
+        }
+
+        for (var j = 0; j < chain.length; j++) {
+            document.write("Chuỗi thứ " + (j + 1) + ": " + chain[j]  + '<br>')
+            
+        }
+    
+       
+    </script>
+</body>
+
+</html>
