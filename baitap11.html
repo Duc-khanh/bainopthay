@@ -8,11 +8,13 @@
 </head>
 
 <body>
-    <input type="text" id="text" value="text">
-    <input type="text" id="add " value="add" onclick="add_aray();">
     <script>
-        let chain = []
-        
+        var chain = [];
+        for (var i = 0; i < 10; i++) {
+            var number = parseInt(prompt("Nhập số nguyên thứ " + (i + 1) + ":"));
+            chain.push(number); //
+        }
+        document.write("Các số nguyên bạn vừa nhập là: " + chain.join(", "));
     </script>
 </body>
 
